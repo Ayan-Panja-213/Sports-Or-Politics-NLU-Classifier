@@ -13,7 +13,7 @@ def data_process():
     data.columns=[col.strip().lower().replace(" ","_") for col in data.columns]
     
     data=data[data["class_index"].isin([1,2])]
-    data["label"]=data["class_index"].map({1:"news",2:"sports"})
+    data["label"]=data["class_index"].map({1:"politics",2:"sports"})
     
     data["full_text"]=(data["title"].astype(str)+" "+data["description"].astype(str))
     texts=data["full_text"]
