@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 
 # FUNCTION for DATA PROCESSING
 def data_process():
-    data=pd.read_csv("sports-or-politics.csv")
+    data=pd.read_csv("data/sports-or-politics.csv")
     print("columns exists in data set : ",data.columns.tolist())
     
     # NORMALIZE COLUMN NAMES
