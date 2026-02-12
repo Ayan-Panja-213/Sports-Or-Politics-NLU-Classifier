@@ -1,12 +1,12 @@
 # Sports-Or-Politics-NLU-Classifier
 
-Overview----------------------------------------------------
+Overview---------------------------------
 This project implements a Natural Language Understanding (NLU) based text classification system that classifies news articles into Sports or Politics using machine learning techniques.
 
-Problem Statement-------------------------------------------
+Problem Statement-------------------------
 Given a text document consisting of a title and description, the task is to classify the document as either Sports or Politics.
 
-Dataset Description------------------------------------------
+Dataset Description-----------------------
 The dataset contains news articles with the following columns:
 Class Index
 Title
@@ -18,20 +18,20 @@ The dataset was reduced from the original version to keep the file size small an
 Dataset location:
 data/sports-or-politics.csv
 
-Feature Representation Techniques------------------------------
+Feature Representation Techniques------------
 The following text feature extraction methods are used:
 Bag of Words
 TF-IDF
 N-grams (unigram and bigram)
 
-Machine Learning Models Used-----------------------------------
+Machine Learning Models Used------------------
 The following classifiers are implemented and compared:
 Multinomial Naive Bayes
 Logistic Regression
 AdaBoost Classifier
 Gradient Boosting Classifier
 
-Experimental Setup----------------------------------------------
+Experimental Setup-----------------------------
 Input text is created by combining Title and Description
 Dataset split:
 90 percent training data
@@ -42,7 +42,7 @@ Results
 The accuracy of each classifier is printed for different feature representations.
 The results show that Logistic Regression,Naive Bayes and Gradient Boosting perform better compared to AdaBoost in most cases.
 
-Project Structure-------------------------------------------------
+Project Structure--------------------------------
 Sports-Or-Politics-NLU-Classifier
 │
 ├── src
@@ -53,19 +53,19 @@ Sports-Or-Politics-NLU-Classifier
 │
 └── README.md
 
-How to Run the Code------------------------------------------------
+How to Run the Code--------------------------------
 Install required libraries
 pandas
 scikit-learn
 Run the program
 python src/M23MA2004_prob4.py
 
-Limitations---------------------------------------------------------
+Limitations------------------------------------------
 Only classical machine learning models are used
 No deep learning or semantic embeddings are applied
 Performance depends on dataset size and quality
 
-Future Scope--------------------------------------------------------
+Future Scope-----------------------------------------
 Use word embeddings such as Word2Vec or GloVe
 Apply deep learning models like LSTM or BERT
 Perform hyperparameter tuning
